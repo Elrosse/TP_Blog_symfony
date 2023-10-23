@@ -19,8 +19,11 @@ class UserCrudController extends AbstractCrudController
     {
         return [
             EmailField::new('email'),
+<<<<<<< HEAD
             TextField::new('name'),
             ArrayField::new("roles"),
+=======
+>>>>>>> parent of 485887b (Ajout de la page de login)
             TextField::new('password'),
         ];
     }

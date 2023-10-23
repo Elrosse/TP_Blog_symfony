@@ -32,6 +32,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
+<<<<<<< HEAD
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
@@ -47,6 +48,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->commentaries = new ArrayCollection();
     }
 
+=======
+>>>>>>> parent of 485887b (Ajout de la page de login)
     public function getId(): ?int
     {
         return $this->id;
@@ -116,6 +119,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
+<<<<<<< HEAD
 
     public function getName(): ?string
     {
@@ -188,4 +192,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+=======
+>>>>>>> parent of 485887b (Ajout de la page de login)
 }
